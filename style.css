@@ -8,8 +8,11 @@
 }
 
 *{
-    background-color: var(--cor-de-fundo);
+    
     color: var(--branco);
+}
+body{
+    background-color: var(--cor-de-fundo);
 }
 span{
  color: var(--verde);
@@ -60,6 +63,13 @@ span{
 .ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
+}
+.aba-conteudo{
+    background-color: var(--texto-fundo);
+    display: none;
+}
+.aba-conteudo,.ativo{
+    display: flex;
 }
 @media screen and (min-width: 700px){
     .botoes{

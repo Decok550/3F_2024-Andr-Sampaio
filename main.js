@@ -5,8 +5,16 @@ const tempoObjetivo1= new Date (2024,6,12,10,00);
 const tempoObjetivo2= new Date (2024,7,13,11,00);
 const tempoObjetivo3= new Date (2024,8,14,12,00);
 const tempoObjetivo4= new Date (2024,9,15,13,00);
-let agora= new Date ();
-contador[0].textContent= tempoObjetivo1-agora
+let agora= new Date (); 
+let segundos
+let minutos
+let horas
+let dias 
+segundos= (tempoObjetivo1-agora)/1000
+minutos= segundos/60 
+horas= minutos/60 
+dias= horas/24 
+contador[0].textContent= `faltam ${dias} dias,${horas} horas, ${minutos} minutos, ${segundos} segundos`
 contador[1].textContent= tempoObjetivo2-agora
 contador[2].textContent= tempoObjetivo3-agora
 contador[3].textContent= tempoObjetivo4-agora

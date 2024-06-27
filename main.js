@@ -1,10 +1,11 @@
 const botoes = document.querySelectorAll(".botao");
 const conteudo = document.querySelectorAll(".aba-conteudo");
 const contador = document.querySelectorAll(".contador")
-const tempoObjetivo1= new Date (2024,6,12,10,00);
+const tempoObjetivo1= new Date (2024,6,12,11,00);
 const tempoObjetivo2= new Date (2024,7,13,11,00);
 const tempoObjetivo3= new Date (2024,8,14,12,00);
 const tempoObjetivo4= new Date (2024,9,15,13,00);
+function calculaTempo(tempoObjetivo){
 let agora= new Date (); 
 let segundos
 let minutos
@@ -14,6 +15,16 @@ segundos= (tempoObjetivo1-agora)/1000
 minutos= segundos/60 
 horas= minutos/60 
 dias= horas/24 
+segundos= Math.floor(segundos);
+minutos= Math.floor(minutos);
+horas= Math.floor(horas);
+dias= Math.floor(dias);
+segundos= segundos%60;
+minutos= minutos%60;
+horas= horas%24;
+}
+
+
 contador[0].textContent= `faltam ${dias} dias,${horas} horas, ${minutos} minutos, ${segundos} segundos`
 contador[1].textContent= tempoObjetivo2-agora
 contador[2].textContent= tempoObjetivo3-agora

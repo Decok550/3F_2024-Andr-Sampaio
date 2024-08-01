@@ -1,7 +1,7 @@
 const botoes = document.querySelectorAll(".botao");
 const conteudo = document.querySelectorAll(".aba-conteudo");
 const contador = document.querySelectorAll(".contador")
-const tempoObjetivo1= new Date (2024,6,12,11,00);
+const tempoObjetivo1= new Date (2024,10,12,11,00);
 const tempoObjetivo2= new Date (2024,7,13,11,00);
 const tempoObjetivo3= new Date (2024,8,14,12,00);
 const tempoObjetivo4= new Date (2024,9,15,13,00);

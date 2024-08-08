@@ -41,6 +41,15 @@ span{
     display: flex;
     justify-content: center;
 }
+.contador-digito-numero{
+    font-size: 80px;
+    margin:0;
+}
+.contador-digito-texto{
+    font-size: 20px;
+    margin:0;
+    color:var(--verde)
+}
 
 .titulo-princpal{
     text-align: center;
